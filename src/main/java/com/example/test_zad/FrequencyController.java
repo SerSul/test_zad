@@ -16,12 +16,16 @@ import java.util.HashMap;
 @RestController
 public class FrequencyController {
 
-    @Operation(summary = "Подсчет частоты символов в строке", description = "Вычисляет частоту символов в данном сообщении.")
+    @Operation(
+            summary = "Подсчет частоты символов в строке",
+            description = "Вычисляет частоту символов в данном сообщении."
+    )
     @PostMapping("/calculateFrequency")
     public ResponseEntity<?> calculateFrequency(
-            @Parameter(description = "Сообщение для анализа") @RequestBody(required = false) String message) {
+            @Parameter(description = "Сообщение для анализа")
+            @RequestBody(required = false) String message) {
         if (message == null || message.isEmpty()) {
-            return ResponseEntity.badRequest().body("Вы не ввели сообщение.");
+            return ResponseEntity.badRequest().body(Collections.singletonMap("error", "Вы не ввели сообщение."));
         }
 
         char[] characters = message.toCharArray();
