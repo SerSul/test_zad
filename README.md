@@ -23,8 +23,14 @@
 
 3. Соберите проект с помощью Maven.
 
-## Доступ к API и документации:
+## Использование API
 
-После запуска, вы сможете получить доступ к вашему API по URL: [http://localhost:8080/calculateFrequency/{message}](http://localhost:8080/calculateFrequency/{message}).
+После запуска вашего приложения, вы можете использовать API, отправляя POST-запросы на `/calculateFrequency`. Ваш запрос должен содержать JSON-тело с полем "message", в котором указан текст для анализа.
 
+Пример запроса:
+Это текст для анализа
+
+## Доступ к документации:
 Для доступа к документации Swagger UI перейдите по URL: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html).
+
+## Screenshots
