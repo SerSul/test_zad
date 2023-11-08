@@ -54,7 +54,7 @@ class FrequencyControllerTest {
     void testCalculateFrequencyWithMissingValue() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.post("/calculateFrequency")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content("")) // Пустое сообщение
+                        .content("")) 
                 .andExpect(MockMvcResultMatchers.status().isBadRequest())
                 .andExpect(MockMvcResultMatchers.content().string("Вы не ввели сообщение."));
     }
