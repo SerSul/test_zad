@@ -34,4 +34,4 @@
 Для доступа к документации Swagger UI перейдите по URL: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html).
 
 ## Screenshots
-![Скриншот 1](swagger.png)
+![Скриншот 1](swaggertest.png)
